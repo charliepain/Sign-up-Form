@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Sign-up Form</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-       <div class="setup">Hello</div> 
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="sidebar">
+            <h1 class="page-heading">Odin</h1>
+            <span>
+                Photo by <a
+                    href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                    Halie West
+                </a> on <a
+                    href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
+                    Unsplash
+                </a>
+            </span>
+        </div>
+        <form action="#" method="post">
+            <p>
+                This is not a real online service!\n
+                You know you need something like this in your life to help you realize your deepest dreams.\n
+                Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> you want to</p>
+            <label for="first_name">First name</label>
+            <input type="text" id="first_name" name="first_name">
+            <label for="last_name">Last name</label>
+            <input type="text" id="last_name" name="last_name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="phone_number">Phone number</label>
+            <input type="tel" id="phone_number" name="phone_number">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <label for="confirmed_password">Confirm password</label>
+            <input type="password" id="confirmed_password" name="confirmed_password">
+            <button type="submit">Create Account</button>
+            <span class="already-member">Already have an account?
+                <a href="#">Log in</a>
+            </span>
+        </form>
+    </div>
+</body>
+
 </html>
