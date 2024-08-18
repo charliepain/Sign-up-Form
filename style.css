@@ -1,3 +1,67 @@
-.setup {
-    color: red;
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(Norse-Bold.otf);
+}
+
+body {
+    height: 100vh;
+    line-height: 1.5;
+}
+
+/* Styles */
+.page-wrapper {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    width: 35%;
+}
+
+.heading-box {
+    --heading-font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    margin: 50% 0px auto 0px;
+    background-color: rgb(60,60,60,0.5);
+}
+
+.odin-logo {
+    width: auto;
+    height: calc(1.5*var(--heading-font-size));
+}
+
+.heading {
+    font-family: "Norse Bold", Arial, Verdana, sans-serif;
+    font-size: var(--heading-font-size);
+    color: white;
+}
+
+.sidebar .footnote {
+    color: white;
+    padding: 16px 0px;
+}
+
+.sidebar .footnote a {
+    color: white;
 }
