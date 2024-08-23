@@ -9,8 +9,6 @@
     margin: 0;
 }
 
-
-
 @font-face {
     font-family: "Norse Bold";
     src: url(Norse-Bold.otf);
@@ -31,8 +29,11 @@ body {
 .sidebar {
     display: flex;
     flex-direction: column;
-    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
     width: 35%;
+    flex: 0 0 auto;
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .heading-box {
@@ -42,8 +43,8 @@ body {
     align-items: center;
     gap: 4px;
     padding: 8px;
-    margin: 50% 0px auto 0px;
-    background-color: rgb(60,60,60,0.5);
+    margin: 30% 0px auto 0px;
+    background-color: rgb(60, 60, 60, 0.5);
 }
 
 .odin-logo {
@@ -58,10 +59,105 @@ body {
 }
 
 .sidebar .footnote {
+    text-align: center;
     color: white;
     padding: 16px 0px;
 }
 
 .sidebar .footnote a {
     color: white;
+}
+
+form {
+    --field-area-horizontal-padding: 32px;
+    --input-left-margin: 2px;
+    --form-button-left-margin: calc(var(--field-area-horizontal-padding) + var(--input-left-margin));
+    background-color: rgb(245, 245, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+form .description {
+    font-weight: 700;
+    margin: 48px 64px 32px 24px;
+}
+
+form .description p {
+    margin: 16px 0px;
+}
+
+form .motivation {
+    font-weight: 600;
+    margin: 8px 0px;
+}
+
+form .field-area {
+    font-weight: 500;
+    background-color: white;
+    padding: 16px var(--field-area-horizontal-padding);
+    box-shadow: 2px 2px 8px rgb(145, 145, 145);
+}
+
+form .fields {
+    margin: 16px 0px;
+}
+
+form .row {
+    display: flex;
+}
+
+form .field {
+    margin: 8px 56px 8px 0px;
+}
+
+form label {
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: rgb(74, 74, 74);
+    display: block;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 0.5;
+}
+
+form input {
+    border: 1.5px solid #E5E7EB;
+    border-radius: 4px;
+    margin: 5px var(--input-left-margin);
+    width: 256px;
+    height: 28px;
+}
+
+form input[type="password"]:invalid {
+    border-color: red;
+}
+
+form input:focus, form input[type="password"]:invalid:focus {
+    outline: none;
+    border: 3px solid blue;
+    box-shadow: 1px 1px 2px rgb(160, 160, 255);
+}
+
+form button[type="submit"] {
+    margin: 24px var(--form-button-left-margin);
+    width: 220px;
+    height: 48px;
+    background-color: #596D48;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 4px rgb(145, 145, 145);
+}
+
+form div.already-member {
+    margin: 0px 48px var(--form-button-left-margin);
+    font-size: 16px;
+}
+
+form div.already-member a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #596D48;
 }
